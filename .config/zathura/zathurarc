@@ -1,0 +1,111 @@
+# Zathura configuration file
+# See man `man zathurarc'
+
+# Open document in fit-width mode by default
+set adjust-open "best-fit"
+
+# One page per row by default
+set pages-per-row 1
+
+#stop at page boundries
+set scroll-page-aware "true"
+set smooth-scroll "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+
+#zoom settings
+set zoom-min 10
+set guioptions ""
+
+# zathurarc-dark
+
+set font "inconsolata 15"
+#set default-bg "#000000" #00
+#set default-fg "#F7F7F6" #01
+
+#set statusbar-fg "#B0B0B0" #04
+#set statusbar-bg "#202020" #01
+
+#set inputbar-bg "#151515" #00 currently not used
+#set inputbar-fg "#FFFFFF" #02
+
+#set notification-error-bg "#AC4142" #08
+#set notification-error-fg "#151515" #00
+
+#set notification-warning-bg "#AC4142" #08
+#set notification-warning-fg "#151515" #00
+
+#set highlight-color "#F4BF75" #0A
+#set highlight-active-color "#6A9FB5" #0D
+
+#set completion-highlight-fg "#151515" #02
+#set completion-highlight-bg "#90A959" #0C
+
+#set completion-bg "#303030" #02
+#set completion-fg "#E0E0E0" #0C
+
+#set notification-bg "#90A959" #0B
+#set notification-fg "#151515" #00
+
+#set recolor "true"
+#set recolor-lightcolor "#000000" #00
+#set recolor-darkcolor "#E0E0E0" #06
+#set recolor-reverse-video "true"
+#set recolor-keephue "true"
+
+
+set render-loading "false"
+set scroll-step 50
+unmap f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+set window-title-basename "true"
+set selection-clipboard "clipboard"
+
+
+set notification-error-bg       rgba(255,85,85,1)     # Red
+set notification-error-fg       rgba(248,248,242,1)   # Foreground
+set notification-warning-bg     rgba(255,184,108,1)   # Orange
+set notification-warning-fg     rgba(68,71,90,1)      # Selection
+set notification-bg             rgba(44,45,48,1)      # Background
+set notification-fg             rgba(248,248,242,1)   # Foreground
+
+set completion-bg               rgba(44,45,48,1)      # Background
+set completion-fg               rgba(98,114,164,1)    # Comment
+set completion-group-bg         rgba(44,45,48,1)      # Background
+set completion-group-fg         rgba(98,114,164,1)    # Comment
+set completion-highlight-bg     rgba(68,71,90,1)      # Selection
+set completion-highlight-fg     rgba(248,248,242,1)   # Foreground
+
+set index-bg                    rgba(44,45,48,1)      # Background
+set index-fg                    rgba(248,248,242,1)   # Foreground
+set index-active-bg             rgba(68,71,90,1)      # Current Line
+set index-active-fg             rgba(248,248,242,1)   # Foreground
+
+set inputbar-bg                 rgba(44,45,48,1)      # Background
+set inputbar-fg                 rgba(248,248,242,1)   # Foreground
+set statusbar-bg                rgba(44,45,48,1)      # Background
+set statusbar-fg                rgba(248,248,242,1)   # Foreground
+
+set highlight-color             rgba(255,184,108,0.5) # Orange
+set highlight-active-color      rgba(255,121,198,0.5) # Pink
+
+set default-bg                  rgba(44,45,48,1)      # Background
+set default-fg                  rgba(248,248,242,1)   # Foreground
+
+set render-loading              true
+set render-loading-fg           rgba(44,45,48,1)      # Background
+set render-loading-bg           rgba(248,248,242,1)   # Foreground
+
+#
+# Recolor mode settings
+#
+
+set recolor-lightcolor          rgba(44,45,48,1)      # Background
+set recolor-darkcolor           rgba(248,248,242,1)   # Foreground
+
+#
+# Startup options
+#
+set adjust-open width
+set recolor true

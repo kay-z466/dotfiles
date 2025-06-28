@@ -1,0 +1,18 @@
+lastupdatecheck: 1744958147
+recentrepos:
+    - /home/linux/.dotfiles
+    - /home/linux/.config/nvim
+    - /home/linux/test/tut/c_c++/Practise
+    - /home/linux/test/tut/git
+startuppopupversion: 5
+lastversion: 0.47.2
+customcommandshistory:
+    - q
+hidecommandlog: true
+ignorewhitespaceindiffview: false
+diffcontextsize: 3
+renamesimilaritythreshold: 50
+localbranchsortorder: recency
+remotebranchsortorder: alphabetical
+gitlogorder: topo-order
+gitlogshowgraph: always

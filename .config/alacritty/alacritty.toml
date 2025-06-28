@@ -1,0 +1,36 @@
+
+[window]
+opacity = 0.90
+blur = true 
+padding.x = 1
+padding.y = 1
+decorations = "Full"
+decorations_theme_variant = "Dark" # "Dark"
+
+[font]
+normal.family = "Monospace"
+size = 17.0
+
+#------------------------KEY BINDINGS--------------------------# 
+
+[[keyboard.bindings]]
+key = "PageUp"
+action = "ScrollLineUp"
+
+[[keyboard.bindings]]
+key = "PageDown"
+action = "ScrollLineDown"
+
+[[keyboard.bindings]]
+mods = "Control|Shift"
+key = "j"
+action = "ScrollLineDown"
+[[keyboard.bindings]]
+mods = "Control|Shift"
+key = "k"
+action = "ScrollLineUp"
+
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/breeze.toml"
+]
