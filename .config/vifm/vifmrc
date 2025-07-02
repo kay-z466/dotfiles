@@ -666,6 +666,7 @@ nnoremap <c-g> :FZFlocate<cr>
 nnoremap <c-f> :FZFfind<cr>
 nnoremap f :filter!
 nnoremap F :filter
+nnoremap q :q<CR>
 
 
 

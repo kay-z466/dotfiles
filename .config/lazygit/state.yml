@@ -2,7 +2,6 @@ lastupdatecheck: 1744958147
 recentrepos:
     - /home/linux/.dotfiles
     - /home/linux/.config/nvim
-    - /home/linux/test/tut/c_c++/Practise
     - /home/linux/test/tut/git
 startuppopupversion: 5
 lastversion: 0.47.2
