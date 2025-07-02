@@ -653,7 +653,8 @@ command! FZFlocate : set noquickview
                   \|     execute system('[ -f "$FZF_PICK" ] && echo goto || echo cd') fnameescape($FZF_PICK)
                   \| endif
 
-colorscheme  solarized
+set title
+set titlestring='vifm~%d'
 " mapping to get multiple visual selection behaviour
 nnoremap v av 
 set nu rnu

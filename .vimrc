@@ -31,6 +31,8 @@ syntax on
 source $VIMRUNTIME/defaults.vim
 syntax on
 set termguicolors
+set title
+set titlestring=vim~%t
 colorscheme breezy 
 filetype plugin indent on 
 filetype plugin on 
