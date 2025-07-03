@@ -70,7 +70,7 @@ set vifminfo=dhistory,chistory,state,tui,tabs,shistory,ehistory,
 set history=100
 
 " Automatically resolve symbolic links on l or Enter.
-set nofollowlinks
+set followlinks
 
 " Natural sort of (version) numbers within text.
 set sortnumbers
@@ -139,8 +139,6 @@ set grepprg="grep -n -H -I -r -s %i %a %s"
 " it on)
 set milleroptions+=rpreview:all
 
-" List of color schemes to try (picks the first one supported by the terminal)
-colorscheme Default-256 Default
 
 " ------------------------------------------------------------------------------
 " Bookmarks
@@ -654,12 +652,14 @@ command! FZFlocate : set noquickview
                   \| endif
 
 set title
-set titlestring='vifm~%d'
+" List of color schemes to try (picks the first one supported by the terminal)
+colorscheme palenight solarized_dark
 " mapping to get multiple visual selection behaviour
 nnoremap v av 
 set nu rnu
 set ignorecase
 set smartcase
+set fastrun
 "set statusline="%A %10u:%-7g %15s %20d"
 command! zoxide :set noquickview | :execute 'cd' fnameescape(system('zoxide query -l "%a" | fzf --height 20 2>/dev/tty')) '%IU' | redraw
 nnoremap <space>cd :zoxide<cr>

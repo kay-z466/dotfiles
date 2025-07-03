@@ -1,5 +1,4 @@
 call plug#begin()
-Plug 'SirVer/ultisnips'
 Plug 'easymotion/vim-easymotion'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'tpope/vim-commentary'
@@ -12,6 +11,14 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'sirver/ultisnips'
 Plug 'lifepillar/vim-solarized8'
+Plug 'nathanaelkane/vim-indent-guides'
+    let g:indent_guides_enable_on_vim_startup = 1
+    let g:indent_guides_guide_size = 0
+    let g:indent_guides_start_level = 2
+    let g:indent_guides_auto_colors = 0
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  guibg=#212121   ctermbg=3 "TODO Fix for all themes
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=#1a1a1a ctermbg=4
+Plug 'SirVer/ultisnips'
     let g:UltiSnipsExpandTrigger = '<tab>'
     let g:UltiSnipsJumpForwardTrigger = '<tab>'
     let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
@@ -33,7 +40,7 @@ syntax on
 set termguicolors
 set title
 set titlestring=vim~%t
-colorscheme breezy 
+colorscheme habamax 
 filetype plugin indent on 
 filetype plugin on 
 set et ai si
